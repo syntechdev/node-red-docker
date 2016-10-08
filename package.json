@@ -31,7 +31,7 @@
         "node-red-node-random": "*",
         "node-red-contrib-particle": "*",
         "node-red-contrib-web-worldmap": "*",
-        "node-red-contrib-aws-iot-hub": "*"
+        "node-red-contrib-aws-iot-hub": "0.0.3"
     },
     "engines": {
         "node": "4.*.*"
