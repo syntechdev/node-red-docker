@@ -12,7 +12,8 @@ WORKDIR /usr/src/node-red
 #
 # We don't run as node-red because we want to mount EFS,
 # and the node-red user does not exist there.
-RUN adduser -h /usr/src/node-red -D -H core \
+# Use the core UID.
+RUN adduser -h /usr/src/node-red -D -H -u 500 core \
     && chown -R core:core /data \
     && chown -R core:core /usr/src/node-red
 
